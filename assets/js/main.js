@@ -90,6 +90,17 @@
         return false;
       });
 
+       /* Back Top Link active
+    ========================================================*/
+
+    $('.event-tabs a').on('click', function(event) {
+      event.preventDefault();
+      $('.panel-content').hide();
+      $($(this).attr('href')).show();
+    });
+    
+
+
   });      
 
 }(jQuery));

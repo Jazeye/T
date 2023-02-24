@@ -1140,13 +1140,12 @@ video {
 	left: 50%;
 	min-width: 100%;
 	min-height: 100%;
-	width: auto;
+	width: 100%;
 	height: auto;
 	z-index: -100;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
-	background-size: cover;
 	transition: 1s opacity;
 }
 
@@ -1236,6 +1235,7 @@ h1 {
 .tb-t .tb-c button:focus {
 	outline: none;
 }
+
 
 .counter-section {
 	background: url(../img/background/TH.jpeg) no-repeat center;
@@ -1920,6 +1920,30 @@ h1 {
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
+}
+
+/*Event Section*/
+.event-tab{
+	color: white;
+	margin: 3%;
+	padding: 3%;
+	font-size: 18px;
+	font-style: bold;
+	background-color: #1c1c1c;
+	box-shadow: 0 8px 18px #000;
+}
+
+.event-tab:hover{
+	color: white;
+	background-color: #5740a1;
+}
+
+.panel-content{
+	display: none;
+	flex-direction: row;
+}
+.panel-content:target{
+	display: flex;
 }
 
 .blog-item {
